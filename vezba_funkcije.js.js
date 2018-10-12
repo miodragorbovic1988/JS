@@ -1,6 +1,6 @@
 //proveriti da li je niska palindrom
 
-/*var s = 'anavolimilovana';
+var s = 'anavolimilovana';
 
 var i;
 var j;
@@ -18,7 +18,7 @@ if (pal == true) {
 
 } else {
     console.log('String is not pal.');
-}*/
+}* /
 
 
 //break moze da se koristi u if petlji, kada se naidje na break prekida se dalje izvrsavanje koda
