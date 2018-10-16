@@ -3,6 +3,7 @@
 
 var s = "aaaiiiiiiii";
 function broj(a) {
+  'use strict';
   var sum = 0;
   var i;
   for (i = 0; i < a.length; i++) {
@@ -48,6 +49,7 @@ console.log(noviNiz);
 //For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]
 
 function rotacija(a, k) {
+
   var i;
   var elementK = [];
   var indeksK = 0;
@@ -100,6 +102,7 @@ console.log(final);
 var broj1 = 3,
   broj2 = 4;
 function tablicaMnozenja(broj1, broj2) {
+
   var i;
   var j;
   var result = 0;
@@ -117,3 +120,36 @@ function tablicaMnozenja(broj1, broj2) {
 }
 var final = tablicaMnozenja(3, 4);
 console.log(final);
+
+//Zadatak 6 Write a function to input temperature in Centigrade and convert to Fahrenheit.
+
+function temperature(c) {
+  var c = c * 9 / 5 + 32;
+  return c;
+}
+
+console.log(temperature(37));
+
+//7.Write a function to find the maximum element in array of numbers. Filter out all non-number elements.
+
+
+var input = [NaN, 23.1, 15, false, -22.5, '', 4, 7, null];
+
+var filterOut = function (a) {
+  var max = -Infinity;
+  for (var i = 1; i < a.length; i++) {
+    if (
+      isFinite(a[i]) &&
+      a[i] !== null &&
+      a[i] !== false &&
+      a[i] !== ""
+    ) {
+      if (max < a[i]) {
+        max = a[i];
+      }
+    }
+  }
+  return max;
+}
+
+console.log(filterOut(input));
