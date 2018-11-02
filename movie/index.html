@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="firstDiv">
+        <form>
+
+            <label>Title<input class="firstInput" type="text" name="title"></label><br>
+            <label>Length(min)<input class="secondInput" type="text" name="Length"></label><br>
+
+            <select id="movieGenre">
+                <option value="-">-</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Sci-fi">Sci-fi</option>
+                <option value="Animated" selected>Animated</option>
+            </select>
+            <br>
+
+            <input class="firstButton" onclick="getMovieFunction()" type="button" value="Create movie">
+
+            <div id="allMovieData">
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="./js/entities.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
