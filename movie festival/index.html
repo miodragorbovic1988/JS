@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie festival</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="mainDiv">
+
+        <div class="inBetweenFirst">
+            <p>Please fill in the form</p>
+            <p>Movie</p>
+        </div>
+        <div class="subMain">
+            <form>
+                <label>Title<input class="firstInput" type="text" name="title" value="title" placeholder="Title"></label><br>
+                <label>Length(min)<input class="secondInput type=" text" name="length" value="length"></label><br>
+                <select>
+                    <option value="-" selected>-</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Animated">Animated</option>
+                </select> </form>
+
+            <input class="firstButton" onclick="getMovieFunction()" type="button" value="Create movie">
+
+            <div id="allMovieData">
+
+            </div>
+        </div>
+        <div class="inBetweenSecond">
+            <h4>Program</h4>
+        </div>
+
+        <div class="subSubMain">
+
+            <form>
+                <label>Date<input class="firstInputBottom" type="date" name="date" value="date"></label><br>
+
+                <input class="firstButtonBottom" onclick="getMovieFunction()" type="button" value="Create program">
+
+                <div id="allProgramData">
+
+                </div>
+
+                <label>Movie<select>
+                        <option value="-" selected>-</option>
+                        <option value="Action">Action</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Animated">Animated</option>
+                    </select>
+                </label>
+
+                <input class="secondButtonBottom" onclick="getMovieFunction()" type="button" value="Add movie to program">
+            </form>
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="./js/entities.js">
+    </script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

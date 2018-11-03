@@ -1,20 +1,21 @@
-function Movie(name, duration, genre) {
-    this.name=name;
-    this.duration=duration;
-    this.genre=genre;
-}
-function Duration(durationLength) {
-    this.durationLength=durationLength;
-}
 function Genre(movieGenre) {
-    this.movieGenre = movieGenre;
+    this.genre = movieGenre;
 }
-Genre.prototype.getData() = function () {
-  return movieGenre.charAt(firstIndex) + movieGenre.charAt(lastIndex);
 
+Genre.prototype.getData = function () {
+    var lastIndex = this.genre.length - 1;
+    return this.genre.charAt(0).toUpperCase() + this.genre.charAt(lastIndex).toUpperCase();
 };
+
+function Movie(name, duration, genre) {
+    this.name = name;
+    this.duration = duration;
+    this.genre = genre;
+}
+
 Movie.prototype.getData = function () {
-    var getMovieData;
-    return getMovieData = this.name +', '+this.duration+', '+this.genre.getData;
+    return this.name + ', ' + this.duration + ', ' + this.genre.getData();
 };
 
+
+// ************************************** 

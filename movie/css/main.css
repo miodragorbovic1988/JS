@@ -15,7 +15,7 @@
     margin: 8px 0;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor:pointer;
 }
 .firstButton:hover {
     background-color: #45a049;
