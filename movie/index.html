@@ -11,10 +11,17 @@
 
 <body>
     <div class="firstDiv">
+        <p>MOVIE</p>
         <form>
 
-            <label>Title<input class="firstInput" type="text" name="title"></label><br>
-            <label>Length(min)<input class="secondInput" type="text" name="Length"></label><br>
+            <label>Title
+                <input class="firstInput" type="text" name="title">
+            </label>
+            <br>
+            <label>Length(min)
+                <input class="secondInput" type="text" name="Length">
+            </label>
+            <br>
 
             <select id="movieGenre">
                 <option value="-" selected>-</option>
@@ -25,11 +32,43 @@
             </select>
             <br>
 
-            <input class="firstButton" onclick="getMovieFunction()" type="button" value="Create movie">
+            <input class="firstButton" type="button" value="Create movie">
 
             <div id="allMovieData">
 
+
             </div>
+
+        </form>
+        <hr>
+        <p>PROGRAM</p>
+        <form>
+
+            <label>Date
+                <input class="choseDate" type="date" name="Date">
+            </label>
+            <div id="createdProgram">
+
+
+            </div>
+            <br>
+            <input class="createProgram" type="button" value="Create program">
+            <br>
+
+            <label>Movie
+                <select id="movieSelect">
+                    <option value="-" selected>-</option>
+                </select>
+            </label>
+            <br>
+            <label>Program
+                <select id="programSelect">
+                    <option value="-" selected>-</option>
+                </select>
+            </label>
+
+            <input class="movieToProgram" type="button" value="Add movie to program">
+
 
         </form>
 

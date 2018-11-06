@@ -20,7 +20,7 @@
 .firstButton:hover {
     background-color: #45a049;
 }
-.firstInput {
+.firstInput, .secondInput, .choseDate, #movieGenre, #movieSelect, #programSelect{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -29,12 +29,14 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-.secondInput {
+
+.createProgram, .movieToProgram {
     width: 100%;
-    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
     margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
-    box-sizing: border-box;
+    cursor:pointer;
 }
